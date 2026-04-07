@@ -36,6 +36,7 @@ link = %1
 dir = %2
 
 echo downloading %file%
-curl -L "%link%" -o "%dir%\%file%"
+cd /d "%dir%"
+curl -L "%link%" -o "%file%"
 echo done %file%
 exit /b
